@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Penalty</string>
+    <string name="country_prompt">Choose a country</string>
+
+    <string-array name="country_arrays">
+        <item>Cristiano Ronaldo</item>
+        <item>Messi</item>
+        <item>Neymar</item>
+        <item>Heung-Min Son</item>
+        <item>Bale</item>
+        <item>Salah</item>
+        <item>Wu Lei</item>
+        <item>Kong</item>
+    </string-array>
+</resources>
