@@ -70,45 +70,152 @@ public class SecondActivity extends AppCompatActivity {
         kong.setMindset("38");
 
         Button btnThree = (Button) findViewById(R.id.btnThree);
+        ImageView text1 = (ImageView) findViewById(R.id.txt1);
+        TextView text2 = (TextView) findViewById(R.id.txt2);
+        Button btnFour = (Button) findViewById(R.id.btnFour);
 
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             String value = extras.getString("key");
-            ImageView text1 = (ImageView) findViewById(R.id.txt1);
-            TextView text2 = (TextView) findViewById(R.id.txt2);
-
+            final String s1;
+            final String s2;
+            final String s3;
 
             if(value.equalsIgnoreCase("Cristiano Ronaldo")){
                 text1.setImageResource(R.drawable.cr7);
                 text2.setText(ronaldo.getProfile());
+                s1 = ronaldo.getShootPower();
+                s2 = ronaldo.getShootAccuracy();
+                s3 = ronaldo.getMindset();
+                btnFour.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(SecondActivity.this, ThirdActivity.class);
+                        intent.putExtra("pow", s1);
+                        intent.putExtra("acc", s2);
+                        intent.putExtra("min", s3);
+                        startActivity(intent);
+                    }
+                });
             }
             else if (value.equalsIgnoreCase("Messi")) {
                 text1.setImageResource(R.drawable.mes);
                 text2.setText(messi.getProfile());
+                s1 = messi.getShootPower();
+                s2 = messi.getShootAccuracy();
+                s3 = messi.getMindset();
+                btnFour.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(SecondActivity.this, ThirdActivity.class);
+                        intent.putExtra("pow", s1);
+                        intent.putExtra("acc", s2);
+                        intent.putExtra("min", s3);
+                        startActivity(intent);
+                    }
+                });
             }
             else if (value.equalsIgnoreCase("Neymar")) {
                 text1.setImageResource(R.drawable.ney);
                 text2.setText(neymar.getProfile());
+                s1 = neymar.getShootPower();
+                s2 = neymar.getShootAccuracy();
+                s3 = neymar.getMindset();
+                btnFour.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(SecondActivity.this, ThirdActivity.class);
+                        intent.putExtra("pow", s1);
+                        intent.putExtra("acc", s2);
+                        intent.putExtra("min", s3);
+                        startActivity(intent);
+                    }
+                });
             }
             else if (value.equalsIgnoreCase("Heung-Min Son")) {
                 text1.setImageResource(R.drawable.son);
                 text2.setText(son.getProfile());
+                s1 = son.getShootPower();
+                s2 = son.getShootAccuracy();
+                s3 = son.getMindset();
+                btnFour.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(SecondActivity.this, ThirdActivity.class);
+                        intent.putExtra("pow", s1);
+                        intent.putExtra("acc", s2);
+                        intent.putExtra("min", s3);
+                        startActivity(intent);
+                    }
+                });
             }
             else if (value.equalsIgnoreCase("Bale")) {
                 text1.setImageResource(R.drawable.bale);
                 text2.setText(bale.getProfile());
+                s1 = bale.getShootPower();
+                s2 = bale.getShootAccuracy();
+                s3 = bale.getMindset();
+                btnFour.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(SecondActivity.this, ThirdActivity.class);
+                        intent.putExtra("pow", s1);
+                        intent.putExtra("acc", s2);
+                        intent.putExtra("min", s3);
+                        startActivity(intent);
+                    }
+                });
             }
             else if (value.equalsIgnoreCase("Salah")) {
                 text1.setImageResource(R.drawable.salah);
                 text2.setText(salah.getProfile());
+                s1 = salah.getShootPower();
+                s2 = salah.getShootAccuracy();
+                s3 = salah.getMindset();
+                btnFour.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(SecondActivity.this, ThirdActivity.class);
+                        intent.putExtra("pow", s1);
+                        intent.putExtra("acc", s2);
+                        intent.putExtra("min", s3);
+                        startActivity(intent);
+                    }
+                });
             }
             else if (value.equalsIgnoreCase("Wu Lei")) {
                 text1.setImageResource(R.drawable.lei);
                 text2.setText(lei.getProfile());
+                s1 = lei.getShootPower();
+                s2 = lei.getShootAccuracy();
+                s3 = lei.getMindset();
+                btnFour.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(SecondActivity.this, ThirdActivity.class);
+                        intent.putExtra("pow", s1);
+                        intent.putExtra("acc", s2);
+                        intent.putExtra("min", s3);
+                        startActivity(intent);
+                    }
+                });
             }
             else if (value.equalsIgnoreCase("Kong")) {
                 text1.setImageResource(R.drawable.kong);
                 text2.setText(kong.getProfile());
+                s1 = kong.getShootPower();
+                s2 = kong.getShootAccuracy();
+                s3 = kong.getMindset();
+                btnFour.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(SecondActivity.this, ThirdActivity.class);
+                        intent.putExtra("pow", s1);
+                        intent.putExtra("acc", s2);
+                        intent.putExtra("min", s3);
+                        startActivity(intent);
+                    }
+                });
             }
 
                 btnThree.setOnClickListener(new View.OnClickListener() {
@@ -118,6 +225,9 @@ public class SecondActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
             });
+
+
         }
+
     }
 }

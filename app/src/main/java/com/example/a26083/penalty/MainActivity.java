@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
         addItemsOnSpinner2();
         addListenerOnButton();
         addListenerOnSpinnerItemSelection();
@@ -58,9 +60,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-                intent.putExtra("key",String.valueOf(spinner1.getSelectedItem()));
-                startActivity(intent);
+                Intent intent1 = new Intent(MainActivity.this, SecondActivity.class);
+
+                intent1.putExtra("key",String.valueOf(spinner1.getSelectedItem()));
+                startActivity(intent1);
 
                 Toast.makeText(MainActivity.this,
                         "OnClickListener : " +
