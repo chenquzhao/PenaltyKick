@@ -22,5 +22,11 @@
         android:layout_below="@+id/txt4"
         android:id="@+id/txt5"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt5"
+        android:id="@+id/txt6"/>
+
 
 </RelativeLayout>
