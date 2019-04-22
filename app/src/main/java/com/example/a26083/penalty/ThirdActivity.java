@@ -1,5 +1,6 @@
 package com.example.a26083.penalty;
 
+import android.media.Image;
 import android.support.v4.view.GestureDetectorCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,18 +8,25 @@ import android.view.Menu;
 import android.view.MotionEvent;
 import android.gesture.Gesture;
 import static android.view.GestureDetector.*;
+
+import android.widget.ImageView;
 import android.widget.TextView;
 
 
 public class ThirdActivity extends AppCompatActivity implements OnGestureListener,OnDoubleTapListener{
 
-    private static TextView textView;
+    private static ImageView textView;
     private GestureDetectorCompat GestureDetect;
+    private ImageView soccer;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third);
+
+        soccer = (ImageView) findViewById(R.id.soccer);
+        soccer.setImageResource(R.drawable.soccer);
 
 
         TextView txt3 = (TextView) findViewById(R.id.txt3);
@@ -34,7 +42,9 @@ public class ThirdActivity extends AppCompatActivity implements OnGestureListene
             txt5.setText(value3);
     }
 
-        textView = (TextView) findViewById(R.id.txt6);
+        textView = (ImageView) findViewById(R.id.txt6);
+        textView.setImageResource(R.drawable.goal);
+
         GestureDetect = new GestureDetectorCompat(this,this);
         GestureDetect.setOnDoubleTapListener(this);
 
@@ -49,55 +59,58 @@ public class ThirdActivity extends AppCompatActivity implements OnGestureListene
 
     @Override
     public boolean onSingleTapConfirmed(MotionEvent e) {
-        textView.setText("onSingleTapConfirmed" + e.toString());
+
         return false;
     }
 
     @Override
     public boolean onDoubleTap(MotionEvent e) {
-        textView.setText("OnDoubleTap" + e.toString());
         return false;
     }
 
     @Override
     public boolean onDoubleTapEvent(MotionEvent e) {
-        textView.setText("onDoubleTapEvent" + e.toString());
+
+        soccer.setTranslationX(10);
+        soccer.setTranslationY(10);
         return false;
     }
 
     @Override
     public boolean onDown(MotionEvent e) {
-        textView.setText("onDown" + e.toString());
+
         return false;
     }
 
     @Override
     public void onShowPress(MotionEvent e) {
-        textView.setText("onShowPress" + e.toString());
+
 
     }
 
     @Override
     public boolean onSingleTapUp(MotionEvent e) {
-        textView.setText("onSingleTapUp" + e.toString());
+
         return false;
     }
 
     @Override
     public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) {
-        textView.setText("onScroll" + e1.toString() + e2.toString());
+        soccer.setTranslationX(-300);
+        soccer.setTranslationY(-300);
+
         return false;
     }
 
     @Override
     public void onLongPress(MotionEvent e) {
-        textView.setText("onLongPress" + e.toString());
+
 
     }
 
     @Override
     public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
-        textView.setText("onFling" + e1.toString() + e2.toString());
+
         return false;
     }
 }
