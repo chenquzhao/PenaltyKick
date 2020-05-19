@@ -5,4 +5,4 @@ A soccer penalty shoot out game on Android, following FIFA shoot out rules.
   
   
   
-All rights reserved
+All rights reserved.
