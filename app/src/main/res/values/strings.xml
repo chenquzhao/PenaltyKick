@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Penalty</string>
+    <string name="app_name">Shoot-out</string>
     <string name="country_prompt">Choose a country</string>
 
     <string-array name="country_arrays">
@@ -11,5 +11,12 @@
         <item>Salah</item>
         <item>Wu Lei</item>
         <item>Kong</item>
+
     </string-array>
+
+    <drawable name="color1">#339966</drawable>
+
+    <drawable name="color2">#BEEDC7</drawable>
+
+    <drawable name="color3">#00Bfff</drawable>
 </resources>

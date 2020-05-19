@@ -15,7 +15,6 @@ import java.util.List;
 
 public class SecondActivity extends AppCompatActivity {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,13 +68,13 @@ public class SecondActivity extends AppCompatActivity {
         kong.setShootAccuracy("58");
         kong.setMindset("38");
 
-        Button btnThree = (Button) findViewById(R.id.btnThree);
-        ImageView text1 = (ImageView) findViewById(R.id.txt1);
-        TextView text2 = (TextView) findViewById(R.id.txt2);
-        Button btnFour = (Button) findViewById(R.id.btnFour);
+        Button btnThree = findViewById(R.id.btnThree);
+        ImageView text1 = findViewById(R.id.txt1);
+        TextView text2 = findViewById(R.id.txt2);
+        Button btnFour = findViewById(R.id.btnFour);
 
         Bundle extras = getIntent().getExtras();
-        if (extras != null) {
+        if (null != extras) {
             String value = extras.getString("key");
             final String s1;
             final String s2;
@@ -201,7 +200,7 @@ public class SecondActivity extends AppCompatActivity {
                 });
             }
             else if (value.equalsIgnoreCase("Kong")) {
-                text1.setImageResource(R.drawable.kong);
+                text1.setImageResource(R.drawable.kong1);
                 text2.setText(kong.getProfile());
                 s1 = kong.getShootPower();
                 s2 = kong.getShootAccuracy();

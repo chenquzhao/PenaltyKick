@@ -3,4 +3,9 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="colorLightGreen">#BEEDC7</color>
+    <color name="colorComfortPink">#F4606C</color>
+    <color name="colorComfortGold">#D1BA74</color>
+    <color name="colorComfortDarkGreen">#19CAAD</color>
+    <color name="colorComfortLightBlue">#BEE7E9</color>
 </resources>
