@@ -94,8 +94,8 @@ public class ThirdActivity extends AppCompatActivity implements OnGestureListene
 
     private ImageView fut_card;
 
-    private int xlen = 0;
-    private int ylen = -220;
+//    private int xlen = 0;
+//    private int ylen = -220;
 
     private ObjectAnimator set_keeper;
 
