@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/icon_start"
+        android:layout_marginTop="450dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/icon_cr7"
+        android:scaleType="centerInside"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_centerHorizontal="true"
+        android:text="Shoot-out 1.0.1"
+        android:textColor="@color/colorComfortGold"
+        android:layout_below="@id/icon_start"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_below="@id/app_name"
+        android:paddingTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Proudly presented by MM studio"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
